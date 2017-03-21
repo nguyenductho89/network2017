@@ -1,64 +1,48 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf810
-{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww24540\viewh14280\viewkind0
-\deftab720
 
-\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
-\clmgf \clvertalt \clshdrawnil \clwWidth3723\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
-\clmrg \clvertalt \clshdrawnil \clwWidth3723\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
+\documentclass{article}
 
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\
-\\documentclass\{article\}\
-\
-\\usepackage[utf8]\{inputenc\}\
-\\title\{Lab01 Report\}\
-\
-\\author\{Nguyen Duc Tho\}\
-\
-\\date\{21 March 2017\}\
-\\begin\{document\}\
-\\maketitle\
-\\section\{VPS\}\
-traceroute to usth.edu.vn (42.112.27.174), 30 hops max, 60 byte packets\\linebreak\
- \\textbf\{(1)\}  route.cloudatcost.com (104.167.107.1)  11.298 ms  11.343 ms  11.397 ms\\linebreak\
- \\textbf\{(2)\}  74.116.120.153 (74.116.120.153)  2.033 ms  2.030 ms  2.102 ms\\linebreak\
- \\textbf\{(3)\}  pc-17.coreswitch1.kit.rackanddata.com (98.143.96.56)  0.638 ms pc-17.coreswitch2.kit.rackanddata.com (98.143.96.58)  0.614 ms pc-17.coreswitch1.kit.rackanddata.com (98.143.96.56)  0.626 ms\\linebreak\
- \\textbf\{(4)\}  te4-6.tor01ad-crs1.ne.fibernetics.ca (74.205.210.161)  3.184 ms vl3831.te-0-1-0-3.tor0151-asr9a.ne.fibernetics.ca (74.205.214.57)  5.287 ms *\\linebreak\
- \\textbf\{(5)\}  * * *\\linebreak\
- \\textbf\{(6)\}  * v635.core1.tor1.he.net (209.51.163.213)  9.665 ms *\\linebreak\
- \\textbf\{(7)\}  * 100ge13-1.core1.chi1.he.net (184.105.80.5)  14.552 ms *\\linebreak\
- \\textbf\{(8)\}  100ge14-1.core2.chi1.he.net (184.105.81.97)  32.982 ms  23.517 ms v635.core1.tor1.he.net (209.51.163.213)  3.908 ms\\linebreak\
- \\textbf\{(9)\}  100ge13-1.core1.chi1.he.net (184.105.80.5)  13.716 ms  13.855 ms 100ge14-2.core1.msp1.he.net (184.105.223.178)  26.042 ms\\linebreak\
-\\textbf\{(10)\}  100ge14-1.core2.chi1.he.net (184.105.81.97)  21.853 ms  41.229 ms 100ge4-1.core1.sea1.he.net (184.105.223.193)  62.697 ms\\linebreak\
-\\textbf\{(11)\}  100ge14-2.core1.msp1.he.net (184.105.223.178)  21.902 ms  21.792 ms 100ge8-1.core1.tyo1.he.net (184.105.213.118)  152.214 ms\\linebreak\
-\\textbf\{(12)\}  18403.tyo.equinix.com (203.190.230.127)  239.815 ms  239.851 ms  220.481 ms\\linebreak\
-\\textbf\{(13)\}  100ge8-1.core1.tyo1.he.net (184.105.213.118)  151.769 ms  151.764 ms  155.062 ms\\linebreak\
-\\textbf\{(14)\}  118.70.3.94 (118.70.3.94)  220.017 ms 18403.tyo.equinix.com (203.190.230.127)  220.026 ms 118.70.3.94 (118.70.3.94)  220.427 ms\\linebreak\
-\\textbf\{(15)\}  42.112.4.62 (42.112.4.62)  221.384 ms 118.70.1.102 (118.70.1.102)  217.539 ms 118.70.1.106 (118.70.1.106)  217.680 ms\\linebreak\
-\\textbf\{(16)\}  mail.usth.edu.vn (42.112.27.174)  219.562 ms  219.009 ms 118.70.3.94 (118.70.3.94)  219.158 ms\\linebreak\
-\
-\\section\{My computer\}\
-traceroute to usth.edu.vn (42.112.27.174), 64 hops max, 52 byte packets\\linebreak\
-\\textbf\{ (1) \} 192.168.1.1 (192.168.1.1)  1.348 ms  0.897 ms  0.795 ms\\linebreak\
-\\textbf\{(2)\} 192.168.6.1 (192.168.6.1)  1.057 ms  1.187 ms  1.002 ms\\linebreak\
-\\textbf\{(3)\}  static.netnam.vn (119.17.212.1)  2.328 ms  3.577 ms  1.947 ms\\linebreak\
- \\textbf\{(4)\}  * * *\\linebreak\
-\\textbf\{(5)\}  10.100.4.21 (10.100.4.21)  2.377 ms  1.424 ms  1.270 ms\\linebreak\
- \\textbf\{(6)\} ci228-6.netnam.vn (210.86.228.6)  2.310 ms  2.510 ms *\\linebreak\
- \\textbf\{(7)\}  218.100.10.7 (218.100.10.7)  2.192 ms  2.118 ms  1.740 ms\\linebreak\
- \\textbf\{(8)\}  * * *\\linebreak\
-\\textbf\{(9)\}  * * *\\linebreak\
-\\textbf\{(10)\}  42.112.4.22 (42.112.4.22)  3.337 ms\
-    118.70.3.94 (118.70.3.94)  2.898 ms\
-    42.112.4.22 (42.112.4.22)  2.928 ms\\linebreak\
-\\textbf\{(11)\}  118.70.3.74 (118.70.3.74)  1067.089 ms  409.348 ms  86.748 ms\\linebreak\
-\\textbf\{(12)\}  mail.usth.edu.vn (42.112.27.174)  2.263 ms  2.221 ms  10.111 ms\\linebreak\
-\
-\\end\{document\}\
-\cell 
-\pard\intbl\itap1\cell \lastrow\row
-}
+\usepackage[utf8]{inputenc}
+\title{Lab01 Report}
+
+\author{Nguyen Duc Tho}
+
+\date{21 March 2017}
+\begin{document}
+\maketitle
+\section{VPS}
+traceroute to usth.edu.vn (42.112.27.174), 30 hops max, 60 byte packets\linebreak
+ \textbf{(1)}  route.cloudatcost.com (104.167.107.1)  11.298 ms  11.343 ms  11.397 ms\linebreak
+ \textbf{(2)}  74.116.120.153 (74.116.120.153)  2.033 ms  2.030 ms  2.102 ms\linebreak
+ \textbf{(3)}  pc-17.coreswitch1.kit.rackanddata.com (98.143.96.56)  0.638 ms pc-17.coreswitch2.kit.rackanddata.com (98.143.96.58)  0.614 ms pc-17.coreswitch1.kit.rackanddata.com (98.143.96.56)  0.626 ms\linebreak
+ \textbf{(4)}  te4-6.tor01ad-crs1.ne.fibernetics.ca (74.205.210.161)  3.184 ms vl3831.te-0-1-0-3.tor0151-asr9a.ne.fibernetics.ca (74.205.214.57)  5.287 ms *\linebreak
+ \textbf{(5)}  * * *\linebreak
+ \textbf{(6)}  * v635.core1.tor1.he.net (209.51.163.213)  9.665 ms *\linebreak
+ \textbf{(7)}  * 100ge13-1.core1.chi1.he.net (184.105.80.5)  14.552 ms *\linebreak
+ \textbf{(8)}  100ge14-1.core2.chi1.he.net (184.105.81.97)  32.982 ms  23.517 ms v635.core1.tor1.he.net (209.51.163.213)  3.908 ms\linebreak
+ \textbf{(9)}  100ge13-1.core1.chi1.he.net (184.105.80.5)  13.716 ms  13.855 ms 100ge14-2.core1.msp1.he.net (184.105.223.178)  26.042 ms\linebreak
+\textbf{(10)}  100ge14-1.core2.chi1.he.net (184.105.81.97)  21.853 ms  41.229 ms 100ge4-1.core1.sea1.he.net (184.105.223.193)  62.697 ms\linebreak
+\textbf{(11)}  100ge14-2.core1.msp1.he.net (184.105.223.178)  21.902 ms  21.792 ms 100ge8-1.core1.tyo1.he.net (184.105.213.118)  152.214 ms\linebreak
+\textbf{(12)}  18403.tyo.equinix.com (203.190.230.127)  239.815 ms  239.851 ms  220.481 ms\linebreak
+\textbf{(13)}  100ge8-1.core1.tyo1.he.net (184.105.213.118)  151.769 ms  151.764 ms  155.062 ms\linebreak
+\textbf{(14)}  118.70.3.94 (118.70.3.94)  220.017 ms 18403.tyo.equinix.com (203.190.230.127)  220.026 ms 118.70.3.94 (118.70.3.94)  220.427 ms\linebreak
+\textbf{(15)}  42.112.4.62 (42.112.4.62)  221.384 ms 118.70.1.102 (118.70.1.102)  217.539 ms 118.70.1.106 (118.70.1.106)  217.680 ms\linebreak
+\textbf{(16)}  mail.usth.edu.vn (42.112.27.174)  219.562 ms  219.009 ms 118.70.3.94 (118.70.3.94)  219.158 ms\linebreak
+
+\section{My computer}
+traceroute to usth.edu.vn (42.112.27.174), 64 hops max, 52 byte packets\linebreak
+\textbf{ (1) } 192.168.1.1 (192.168.1.1)  1.348 ms  0.897 ms  0.795 ms\linebreak
+\textbf{(2)} 192.168.6.1 (192.168.6.1)  1.057 ms  1.187 ms  1.002 ms\linebreak
+\textbf{(3)}  static.netnam.vn (119.17.212.1)  2.328 ms  3.577 ms  1.947 ms\linebreak
+ \textbf{(4)}  * * *\linebreak
+\textbf{(5)}  10.100.4.21 (10.100.4.21)  2.377 ms  1.424 ms  1.270 ms\linebreak
+ \textbf{(6)} ci228-6.netnam.vn (210.86.228.6)  2.310 ms  2.510 ms *\linebreak
+ \textbf{(7)}  218.100.10.7 (218.100.10.7)  2.192 ms  2.118 ms  1.740 ms\linebreak
+ \textbf{(8)}  * * *\linebreak
+\textbf{(9)}  * * *\linebreak
+\textbf{(10)}  42.112.4.22 (42.112.4.22)  3.337 ms
+    118.70.3.94 (118.70.3.94)  2.898 ms
+    42.112.4.22 (42.112.4.22)  2.928 ms\linebreak
+\textbf{(11)}  118.70.3.74 (118.70.3.74)  1067.089 ms  409.348 ms  86.748 ms\linebreak
+\textbf{(12)}  mail.usth.edu.vn (42.112.27.174)  2.263 ms  2.221 ms  10.111 ms\linebreak
+
+\end{document}
