@@ -11,24 +11,20 @@
 #include <arpa/inet.h>
 
 int main( int argc, char *argv[] ) {
-    int i;
-    
-    char hostName[100];
-    
+    int i;    
+    char hostName[100];    
     if ( argc == 1 ) {
         printf("Nhap hostname\n");
         scanf("%s",hostName);
-            struct hostent* h;
-            h = gethostbyname(hostName);
+        struct hostent* h;
+        h = gethostbyname(hostName);
         printf( "IPAddress of :%s",hostName );
-            printf( "\n %s\n ", inet_ntoa( *( struct in_addr*)( h -> h_addr_list[0])));
+        printf( "\n %s\n ", inet_ntoa( *( struct in_addr*)( h -> h_addr_list[0])));
     } else {
         printf( "IPAddress of :%s",argv[1] );
-        
-            struct hostent* h;
-            h = gethostbyname(argv[1]);
-            printf( "\n%s\n ", inet_ntoa( *( struct in_addr*)( h -> h_addr_list[0])));
+        struct hostent* h;
+        h = gethostbyname(argv[1]);
+        printf( "\n%s\n ", inet_ntoa( *( struct in_addr*)( h -> h_addr_list[0])));
     }
-    
     return 0;
 }
