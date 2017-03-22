@@ -9,12 +9,7 @@
 #include <stdio.h>
 #include <netdb.h>
 #include <arpa/inet.h>
-//int main(){
-//    struct hostent* h;
-//    h = gethostbyname("google.com.vn");
-//    printf( "IP Address: %s ", inet_ntoa( *( struct in_addr*)( h -> h_addr_list[0])));
-//    return 0;
-//}
+
 int main( int argc, char *argv[] ) {
     int i;
     
