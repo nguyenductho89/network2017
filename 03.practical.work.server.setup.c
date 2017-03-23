@@ -9,7 +9,7 @@ int main()
     int sockfd, clientfd;
     socklen_t clen;
     struct sockaddr_in saddr, caddr;
-    unsigned short port = 8781;
+    unsigned short port = 8782;
     if ((sockfd=socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         printf("Error creating socket\n");
     }
