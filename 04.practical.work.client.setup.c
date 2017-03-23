@@ -37,7 +37,7 @@ int main( int argc, char *argv[] ){
             scanf("%s",hostName);
             struct hostent* h;
             h = gethostbyname(hostName);
-            if ((h=gethostbyname("ict.usth.edu.vn")) == NULL) {
+            if (h == NULL) {
                 printf("Unknown host\n");
                 
             }
@@ -49,7 +49,7 @@ int main( int argc, char *argv[] ){
             printf( "IPAddress of :%s",argv[1] );
             struct hostent* h;
             h = gethostbyname(argv[1]);
-            if ((h=gethostbyname("ict.usth.edu.vn")) == NULL) {
+            if (h == NULL) {
                 printf("Unknown host\n");
                 
             }
