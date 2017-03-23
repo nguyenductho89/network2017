@@ -10,7 +10,7 @@ int main()
     socklen_t clen;
     struct sockaddr_in saddr, caddr;
     unsigned short port = 8781;
-    if ((sockfd=socket(AF_INET, SOCK_STREAM, 0) < 0) ){
+    if ((sockfd=socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         printf("Error creating socket\n");
     }
     memset(&saddr, 0, sizeof(saddr));
