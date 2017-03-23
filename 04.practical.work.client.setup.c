@@ -10,7 +10,7 @@
 void conectToServer(struct hostent *h) {
     struct sockaddr_in saddr;
     int sockfd;
-    unsigned short port = 80;
+    unsigned short port = 8782;
     if ((sockfd=socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         printf("Error creating socket\n");
         
