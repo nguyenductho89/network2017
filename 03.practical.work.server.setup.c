@@ -20,16 +20,12 @@ int main()
     if ((bind(sockfd, (struct sockaddr *) &saddr, sizeof(saddr)) < 0)) {
         printf("Error binding\n");
     }
-    
     if (listen(sockfd, 5) < 0) {
         printf("Error listening\n");
     }
-    
     clen=sizeof(caddr);
     if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) < 0) {
         printf("Error accepting connection\n");
-        //
     }
-    
     return 0;
 }
