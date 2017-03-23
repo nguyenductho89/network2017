@@ -24,6 +24,8 @@ void conectToServer(struct hostent *h) {
         
     }
     
+    printf("Connect succesfully!\n");
+    
     
 }
 
