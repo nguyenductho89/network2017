@@ -31,17 +31,13 @@ int main()
     }
     
     while(clientfd > 0){
-       // printf("Server is ready for reading and writing %d\n", clientfd);
-        
         //Receive message
         messageSize = recv(clientfd, message, sizeof(message), 0);
         if (messageSize < 0){
             printf("ERROR reading from socket");
         }else{
             printf("@@@@@@@@@@@@ Client: %s\n",message);
-            //printf("*************Received\n");
         }
-        
         //Send message
         printf("...\n");
         scanf("%s",message) ;
@@ -50,14 +46,8 @@ int main()
             printf("ERROR writing to socket");
         }else{
             printf("@@@@@@@@@@@@ Server: %s\n",message);
-           // printf("*************Sent\n");
         }
-        
-      
-        
     }
-    
-    
     return 0;
 }
 

@@ -52,9 +52,7 @@ int main( int argc, char *argv[] ){
     
     char message[256];
     sockfd = connectToServer(h);
-    while (sockfd > 0) {
-       // printf("Client is ready for reading and writing %d\n", sockfd);
-        
+    while (sockfd > 0) {        
         //Send message
         printf("...\n");
         scanf("%s",message) ;
@@ -63,7 +61,6 @@ int main( int argc, char *argv[] ){
             printf("ERROR writing to socket");
         }else{
             printf("@@@@@@@@@@@@ Client: %s\n",message);
-          //  printf("*************Sent\n");
         }
         
         //Receive message
@@ -72,7 +69,6 @@ int main( int argc, char *argv[] ){
             printf("ERROR reading from socket");
         }else{
             printf("@@@@@@@@@@@@ Server: %s\n",message);
-           // printf("*************Received\n");
         }
         
     }
