@@ -40,36 +40,16 @@ int main()
     }
     while(1){
         clen=sizeof(caddr);
-        if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) < 0) {
-           // printf("Clientfd:%d\n",clientfd);
-           // printf("Error accepting connection\n");
-        }else{
-            //fcntl() - nonblocking
+        if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) > 0) {
             int fl = fcntl(clientfd, F_GETFL, 0);
             fl |= O_NONBLOCK;
             fcntl(clientfd, F_SETFL, fl);
             while (1) {
                 //Receive message
                 messageSize = recv(clientfd, message, sizeof(message), 0);
-                if (messageSize < 0){
-                   // printf("ERROR reading from socket");
-                }else{
+                if (messageSize > 0){
                     printf("@@@@@@@@@@@@ Client: %s\n",message);
                 }
-                //Send message
-                //scanf("%s",message) ;
-                //Close Socket
-                //if (strcmp(message,"/dc") == 0 ){
-                //    int count;
-                //    shutdown(sockfd, 2);
-                //    close(sockfd);
-                //    return 0;
-                //}
-                //messageSize = send(clientfd, message, strlen(message), 0);
-                //if (messageSize < 0){
-                //    printf("ERROR writing to socket");
-                //}else{
-                //    printf("@@@@@@@@@@@@ Server: %s\n",message);
             }
         }
     }
